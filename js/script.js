@@ -6,7 +6,7 @@ $(window).load(function() {
 
 $(document).ready(function() {
 
-  initializeMap(lat,lng);
+  //initializeMap(lat,lng);
   
 	//Elements Appear from top
 	$('.item_top').each(function() {
@@ -61,7 +61,7 @@ $(document).ready(function() {
 		topSpacing : 0
 	});
 
-  rotate('rotate1');
+  //rotate('rotate1');
 
     // Galleries Slider
 	$('.slider_container').flexslider({
@@ -395,20 +395,20 @@ $(function() {
 });
 
 //Initilize Google Map
- function initializeMap(lat,lng) {
-     var mapOptions = {
-       center: new google.maps.LatLng(lat, lng),
-       zoom: 16,
-       zoomControl: true,
-       scaleControl: false,
-       scrollwheel: false,
-       mapTypeId: google.maps.MapTypeId.ROADMAP
-     };
-     var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
-     var marker = new google.maps.Marker({
-     position: mapOptions['center'],
-     map: map,
-     });
-       
-     return map;
- }    
+// function initializeMap(lat,lng) {
+//     var mapOptions = {
+//       center: new google.maps.LatLng(lat, lng),
+//       zoom: 16,
+//       zoomControl: true,
+//       scaleControl: false,
+//       scrollwheel: false,
+//       mapTypeId: google.maps.MapTypeId.ROADMAP
+//     };
+//     var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+//     var marker = new google.maps.Marker({
+//     position: mapOptions['center'],
+//     map: map,
+//     });
+//
+//     return map;
+// }
