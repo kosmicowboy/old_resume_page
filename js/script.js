@@ -6,8 +6,20 @@ $(window).load(function() {
 
 $(document).ready(function() {
 
-  //initializeMap(lat,lng);
-  
+
+
+		var $magic = $(".magic"),
+
+		magicWHalf = $magic.width() / 2;
+
+		$(document).on("mousemove", function(e) {
+
+			$magic.css({"left": e.pageX - magicWHalf, "top": e.pageY - magicWHalf});
+
+		});
+
+
+
 	//Elements Appear from top
 	$('.item_top').each(function() {
 		$(this).appear(function() {
